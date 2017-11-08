@@ -1,0 +1,19 @@
+{
+  "headers": {
+    "from": "Test",
+    "address": "#RANDOM#@testdomain.io",
+    "subject": "Some email subject"
+  },
+  "url": [
+    "http://www.google.com/"
+  ],
+  "smtp": {
+    "hostname": "localhost",
+    "port": 25,
+    "maxConnections": 20,
+    "maxMessages": 100,
+    "ignoreTLS": true,
+    "ssl": false
+  },
+  "queueLimit": 300
+}

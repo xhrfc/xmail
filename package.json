@@ -1,0 +1,22 @@
+{
+  "name": "emailsender",
+  "version": "1.0.0",
+  "description": "Sends Mass Bulk Emails",
+  "main": "emailer.js",
+  "scripts": {
+    "start": "node emailer.js"
+  },
+  "author": "ice",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "colors": "^1.1.2",
+    "gauge": "^2.7.4",
+    "jsonfile": "^4.0.0",
+    "line-by-line": "^0.1.5",
+    "nodemailer": "^4.3.1",
+    "nodemailer-html-to-text": "^2.1.0",
+    "nodemailer-smtp-pool": "^2.8.3",
+    "prompt-confirm": "^1.2.0"
+  }
+}
