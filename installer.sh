@@ -39,6 +39,8 @@ then
     echo "[3] Updating and Installing Dependicies"
     echo -e "** System update"
     apt-get -qq update  > /dev/null 2>&1
+    echo -e "** Installing curl"
+	apt-get install -qq -y curl > /dev/null 2>&1
     echo -e "** Installing nodejs repository"
     curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - > /dev/null 2>&1
     echo -e "** Installing build compilers"
@@ -47,8 +49,6 @@ then
 	apt-get install -qq -y htop > /dev/null 2>&1
 	echo -e "** Installing unzip"
 	apt-get install -qq -y unzip > /dev/null 2>&1
-	echo -e "** Installing curl"
-	apt-get install -qq -y curl > /dev/null 2>&1
 	echo -e "** Installing pflogsumm"
 	apt-get install -qq -y pflogsumm > /dev/null 2>&1
 	echo -e "** Installing nodejs"

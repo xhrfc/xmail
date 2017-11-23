@@ -115,8 +115,8 @@ const randomId = (len) => {
 
 
 const sendMail = (emailAddress, callback) => {
-    if (typeof(emailAddress) == 'undefined' || emailAddress == null || emailAddress == '') {
-        callback(new Error('Invalid Email Address'));
+    if (emailAddress.indexOf('@') < 0) {
+        callback();
     } else {
         // -- replace data
         let htmlBodyClone = htmlBody;
